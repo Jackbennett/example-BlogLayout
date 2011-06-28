@@ -1,0 +1,133 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>		<html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>		<html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Example Blog Layout</title>
+	<meta name="description" content="">
+	<meta name="author" content="jack bennett">
+
+	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+	<!-- CSS: implied media="all" -->
+	<link rel="stylesheet" href="css/style.css?v=2">
+
+	<!-- My cusotm stylesheets //jackben.net -->
+	<link rel="stylesheet" href="css/1080_style.css?v=2">
+
+	<!-- Uncomment if you are specifically targeting less enabled mobile browsers
+	<link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">	-->
+
+</head>
+
+<body>
+
+	<div id="container">
+		
+		<nav class="primary">
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Galleries</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+
+		<header>
+			
+			<hgroup>
+				<h1>Site demo title</h1>
+					
+				<nav class="secondary">
+				<ul>
+					<li class="top"><h2>Current Page / subnav title</h2><a href="#" id="secondary-dropdown"><img src="img/arrow-down.png" alt="\/" width="27px"/></a>
+						<ul class="sub">
+							<li><a href="">subnav 1</a></li>
+							<li><a href="">Gallery four hundred and eighty five million and two</a></li>
+							<li><a href="">subnav 3</a></li>
+						</ul>
+					</li>
+				</ul>
+				</nav>
+			</hgroup>
+			
+		</header>
+		<p class="clearfix"></p>
+
+		<div id="wrap">
+			<div id="main" role="main">
+				
+				<section id="content">
+					<article>
+						<h3>Some minor title</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla risus quam, varius sed lobortis et, facilisis laoreet eros. Pellentesque iaculis imperdiet orci, ut varius turpis euismod ut. In leo mi, blandit porttitor placerat vel, feugiat dignissim sem. Nulla metus diam, rhoncus a tincidunt sit amet, posuere vitae ipsum. Suspendisse a justo diam. Aliquam massa dolor, hendrerit et lobortis id, euismod id augue. Quisque quam purus, rutrum ut eleifend ac, dignissim in ipsum. In hac habitasse platea dictumst. Nulla tincidunt adipiscing tellus at iaculis. Morbi tincidunt, diam sagittis sagittis consectetur, diam velit posuere massa, at accumsan justo erat a ipsum. Vivamus congue suscipit orci, vel consequat sapien semper nec.</p>
+
+						<p>Vivamus eget nisl erat, eget bibendum libero. Vivamus quis luctus lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse accumsan tellus sed mauris mattis viverra. Sed convallis dolor ac tellus lobortis luctus. Phasellus volutpat lacinia lorem in rhoncus. In feugiat risus et metus dictum nec iaculis nisi sollicitudin. Sed eget augue elit, sed blandit quam. Integer gravida diam eleifend libero sodales sagittis. Duis nec dictum felis. Duis sed ante massa. Nunc vitae lectus nec sapien fermentum dictum id consequat libero.</p>
+					</article>
+
+					<article>
+						<h3>Target compatibility</h3>
+						<p>Fluid layouts of the following sizes</p>
+						<ol>
+							<li>320 <smal>phone</smal></li>
+							<li>480 <small>landscape phone</small></li>
+							<li>1024</li>
+							<li><del>1920</del></li>
+						</ol>
+					</article>
+				</section>
+				
+				<aside class="thin">
+					<article class="notice">
+					<img src="img/notice-L.png" alt="notice  css" width="47px" height="41px" class="notice"/>
+						
+						<h4>Notice</h4>
+						<p>Some piece of news</p>
+					</article>
+
+					<article class="notice">
+					<img src="img/notice-L.png" alt="notice  css" width="47px" height="41px" class="notice"/>
+						
+						<h4>Some News Title</h4>
+						<p>Some piece of news</p>
+						<p>In hac habitasse platea dictumst. Nulla tincidunt adipiscing tellus at iaculis.</p>
+					</article>
+				</aside>
+
+			</div><!-- #main -->
+
+		</div><!-- #wrap -->
+
+		<nav id="social-nav">
+			<ul>
+				<li><a href=""><img src="img/facebook.png" alt="Facebook" width="48px" height="48px"/><span>facebook</span></a></li>
+				<li><a href=""><img src="img/twitter.png" alt="Twitter"  width="48px" height="48px"/><span>Twitter</span></a></li>
+				<li><a href=""><img src="img/tumblr.png" alt="Tumblr."  width="48px" height="48px"/><span>Tumblr.</span></a></li>
+				<li><a href=""><img src="img/envelope.png" alt="Email"  width="48px" height="35px"/><span>Email</span></a></li>
+			</ul>
+		</nav>
+
+		<div class="push"></div>
+	</div> <!--! end of #container -->
+
+	<footer>
+
+		<p>Site a demo by <a href="http://jackben.net" title="Creators site">jackben.net</a></p>
+
+	</footer>
+
+</body>
+</html>

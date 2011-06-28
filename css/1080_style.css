@@ -1,0 +1,306 @@
+/**
+ * Primary styles
+ *
+ * Author: jackben.net/author/?p=testing
+ */
+html, body{
+	height:100%;
+
+	background:url("../img/rough-white.png");
+}
+
+#container{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -200px;/* Mirror footer height, fixes footer to the floor*/
+	overflow:hidden;
+}
+
+nav li{
+	display:inline;
+
+}
+	nav a{
+		margin:0 5px;
+		padding:2px 5px;
+		display:block;
+	}
+
+	.primary{
+		margin-right:10%;
+		padding-right:20px;
+		float:right;
+		border:1px solid #ccc;
+		border-top:0;
+
+		background:#fff;
+	}
+	.primary a{
+		padding:5px 0 5px 20px;
+		float:left;
+	}
+
+	.secondary ul{
+		width:95%;
+		position:relative;
+	}
+	.secondary ul li ul{
+		margin:0 20px 10px 0; /*mar-top mirror header bottom margin*/
+		padding:0 0 5px 20px;
+		float:left;
+		clear:both;
+		overflow:hidden;
+		position:absolute;
+		z-index:9000;
+		visibility:hidden;
+
+		border:1px solid #ccc;
+		border-top:0;
+		background:#fff;
+	}
+	#secondary-dropdown{
+		margin:0;
+		border:none;
+	}
+	#secondary-dropdown img{
+		margin-top:-5px;
+	}
+	.secondary h2{
+		margin-right:20px;
+		float:left;
+	}
+	.secondary a{
+		margin:-1px 0 5px;
+		padding:10px 10px 5px 5px;
+
+		text-decoration:none;
+		border-top:1px solid #ccc;
+	}
+	/*hovesubmenu css - combine later*/
+	.secondary ul li:hover ul{
+		visibility:visible;
+	}
+
+
+
+
+	#social-nav{
+		position:fixed;
+		top:20%;
+		right:0;
+		z-index:9001;/*What 9000!?*/
+	}
+		#social-nav img{
+			padding:0 0 5px 0;
+			vertical-align:middle;
+		}
+		#social-nav a{
+			text-decoration:none;
+			float:right;
+			clear:right;
+		}
+		#social-nav span{
+			display:none;
+			margin:5px 30px 5px 10px;
+		}
+
+header{
+	width:100%;
+	margin-top:-1px;
+	float:left;
+	clear:both;
+
+}
+hgroup{
+	min-width:480px;
+	padding:10px 10px 10px 10%;
+	float:left;
+
+	background:#fff;
+	border:1px solid #ccc;
+	border-left:0;
+
+}
+#wrap{
+	max-width:1260px;
+	margin:30px auto;
+	padding:0 68px 0 58px;
+}
+#main{
+	padding:10px 0 20px 20px;
+	overflow:hidden;
+
+	background:#fff;
+}
+
+#content{
+	width:70%;
+	/*margin-right:170px;aside width+padding*/
+	padding-right:10px;
+	float:left;
+
+	border-right:1px solid #ccc;
+}
+
+article{
+	position:relative;
+}
+	article img{
+		width:100%;
+	}
+
+aside{
+	float:right;
+}
+aside.thin{
+	width:28%;
+}
+aside.fat{/* 2nd aside area needs finishing */
+	width:240px;
+}
+	aside img.notice{
+		width:47px;
+		margin:5px;
+		float:right;
+	}
+
+footer{
+	height:159px;/* height -border -padding */
+	padding:20px;
+	max-width:760px;
+	margin: 0 auto;
+
+	background:#fff;
+	border:1px solid #ccc;
+	border-bottom:0;
+}
+
+.push{
+	height:200px;/* Match footer height, fixes footer to the floor*/
+	float:left;
+	clear:both;	
+}
+
+/* 
+
+Font settings
+
+*/
+
+h1{
+	font-size:320%;
+	line-height:1.1em;
+	letter-spacing:;
+}
+h2{
+	font-size:230%;
+	line-height:;
+}
+h3{
+	font-size:180%;
+	padding:5px 0 15px;
+}
+h4{
+	font-size:130%;
+	padding:10px 0;
+}
+h5{
+	font-size:110%;
+}
+h6{
+	font-size:110%;
+}
+
+p{
+	text-indent:1em;
+	line-height:1.6em;
+	padding:0 0 15px;
+}
+
+
+/*  
+project : Bendy - https://github.com/BlakeWilliams/Bendy
+
+  Tablet Layout: 768px.
+      Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+/*@media only screen and (min-width: 768px) and (max-width: 991px) {
+   #main {
+      width: 712px;
+   }
+}*/
+
+
+/*    Mobile Layout: 320px.
+      Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 620px) {
+
+
+#wrap {
+	padding:0;
+}
+
+hgroup{
+	min-width:89%;
+	padding-right:1%;
+
+	border-right:0;
+}
+
+#content{
+	width:auto;
+	margin:0 0 20px;
+	float:none;
+	border:0;
+}
+
+aside.thin{
+	width:auto;
+	margin:0 0 20px;
+	float:none;
+	overflow:hidden;
+}
+	aside article{
+		width:50%;
+
+		float:left;
+	}
+
+#social-nav{
+	margin-bottom:30px;
+	position:static;
+	overflow:hidden;
+}
+	#social-nav a{
+		float:left;
+	}
+
+footer{
+	width:92%;
+	padding:20px 4%;
+	border-width:1px 0 0;
+}
+
+
+}
+
+
+/*    Wide Mobile Layout: 480px.
+      Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+/*
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+   #main {
+      max-width: 436px;
+   }
+}*/
